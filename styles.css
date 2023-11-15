@@ -1,3 +1,5 @@
+/* GENERAL STYLING */
+
 *, 
 *::before, 
 *::after {
@@ -12,6 +14,8 @@ body {
     background-color: #223351;
 }
 
+/* HEADER STYLES */
+
 header {
     text-align: center;
 }
@@ -24,6 +28,8 @@ h1 {
     -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: white;
 }
+
+/* GAME BOARD STYLES */
 
 .board {
     border: 2px solid black;
@@ -39,6 +45,8 @@ h1 {
     margin: 0 auto;
 }
 
+/* LETTER STYLES */
+
 .letter {
     display: flex;
     align-items: center;
@@ -48,4 +56,11 @@ h1 {
     padding: 0.25em;
     text-transform: uppercase;
     font-size: 250%;
+}
+
+/* ATTEMPT DISPLAY STYLING */
+
+.attempt__display-wrapper {
+    margin-top: 4rem;
+    text-align: center;
 }
