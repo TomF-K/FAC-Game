@@ -72,3 +72,17 @@ h1 {
     text-align: center;
     margin: 0 auto;
 }
+
+.attempt__display-btn {
+   margin: 2em;
+   padding: 0.5em 1.25em;
+   border-radius: 15px;
+   border: none;
+   background-color: white;
+   font-weight: bolder;
+   font-size: 1.5em;
+}
+
+.attempt__display-btn:hover {
+    opacity: 0.8;
+}
