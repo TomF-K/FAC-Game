@@ -4,6 +4,27 @@
     box-sizing: border-box;
 }
 
+:root {
+    --font-primary: 'Paytone One', sans-serif;
+}
+
+body {
+    background-color: #223351;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--font-primary);
+    font-size: 100px;
+    color: #ba3e3a;
+    -webkit-text-fill-color: #ba3e3a; 
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: white;
+}
+
 .board {
     border: 2px solid black;
     border-radius: 25px;
