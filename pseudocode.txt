@@ -4,8 +4,6 @@ TODO:
 
 ELEMENTS TO ADD:
 
-Score: 0
-Time Remaining: 2:00
 Rules
 Settings
 
