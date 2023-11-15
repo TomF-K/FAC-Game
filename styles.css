@@ -55,12 +55,12 @@ h1 {
 /* GAME STATS */
 
 .game__stats-wrapper {
-    grid-column: 6/7;
-    border: 2px solid lightblue;
+    grid-column: 6/8;
+    /* border: 2px solid lightblue; */
     color: white;
     font-family: var(--font-primary);
     font-weight: lighter;
-    
+    letter-spacing: 0.1em;
 
 }
 
