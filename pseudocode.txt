@@ -4,7 +4,25 @@ TODO:
 
 ELEMENTS TO ADD:
 
+Score: 0
+Time Remaining: 2:00
+Rules
+Settings
 
 
 
 JS PSEUDOCODE:
+
+user clicks on a letter
+chosen letter is highlighted
+HOW TO: neighbouring letters only? 
+POSSIBLE: do chosen letters get displayed below board? 
+chosen letter gets pushed to an empty array
+repeat until user clicks submit button
+
+submit button checks if attempt is in array, then award points 
+points = attempt.length
+points are added to Score
+at end of game: TIME'S UP!
+at end of game: FINAL SCORE = XX
+at end of game: play again button
