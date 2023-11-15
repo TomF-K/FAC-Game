@@ -14,7 +14,7 @@ Settings
 JS PSEUDOCODE:
 
 user clicks on a letter
-chosen letter is highlighted
+chosen letter is highlighted (toggle class - background color change?)
 HOW TO: neighbouring letters only? 
 POSSIBLE: do chosen letters get displayed below board? 
 chosen letter gets pushed to an empty array

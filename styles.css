@@ -32,17 +32,16 @@ h1 {
 
 /* GAME BOARD STYLES */
 
-.board__wrapper {
-    display: flex;
-    flex-flow: column nowrap;
+.main__wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
 }
 
 .board {
+    grid-column: 3/6;
     border: 2px solid black;
     border-radius: 25px;
-    width: 30%;
-    height: 30%;
-    flex-basis: 66%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -50,14 +49,18 @@ h1 {
     padding: 1.5em;
     background-color: #f3a941;
     margin: 0 auto;
+    
 }
 
 /* GAME STATS */
 
-.game__stats-container {
+.game__stats-wrapper {
+    grid-column: 6/7;
     border: 2px solid lightblue;
-    width: 20%;
     color: white;
+    font-family: var(--font-primary);
+    font-weight: lighter;
+    
 
 }
 
