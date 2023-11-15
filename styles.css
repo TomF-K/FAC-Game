@@ -3,3 +3,23 @@
 *::after {
     box-sizing: border-box;
 }
+
+.board {
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 30%;
+    height: 30%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+    padding: 1em;
+    background-color: #f3a941;
+    margin: 0 auto;
+}
+
+.letter {
+    max-width: 100px;
+    max-height: 100px;
+    padding: 2em 1em;
+}
