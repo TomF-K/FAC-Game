@@ -34,13 +34,19 @@ h1 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 5px;
-    padding: 1em;
+    padding: 1.5em;
     background-color: #f3a941;
     margin: 0 auto;
 }
 
 .letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 100px;
     max-height: 100px;
-    padding: 2em 1em;
+    padding: 0.25em;
+    text-transform: uppercase;
+    font-size: 250%;
+    
 }
