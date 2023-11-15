@@ -27,6 +27,7 @@ h1 {
     -webkit-text-fill-color: #ba3e3a; 
     -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: white;
+    margin: 0.25em;
 }
 
 /* GAME BOARD STYLES */
@@ -61,12 +62,12 @@ h1 {
 /* ATTEMPT DISPLAY STYLING */
 
 .attempt__display-wrapper {
-    margin-top: 4rem;
     text-align: center;
+    margin-top: 3em;
 }
 
 .attempt__display {
-    height: 100px;
+    height: 80px;
     border: 2px solid white;
     width: 60%;
     text-align: center;
@@ -74,7 +75,7 @@ h1 {
 }
 
 .attempt__display-btn {
-   margin: 2em;
+   margin: 1em;
    padding: 0.5em 1.25em;
    border-radius: 15px;
    border: none;
