@@ -75,6 +75,18 @@ h1 {
     padding: 0.25em;
     text-transform: uppercase;
     font-size: 250%;
+    user-select: none;
+    cursor: pointer;
+}
+
+.letter:focus {
+    background-color: grey;
+    opacity: 0.6;
+}
+
+.clicked {
+    background-color: grey;
+    opacity: 0.8;
 }
 
 /* ATTEMPT DISPLAY STYLING */
@@ -100,8 +112,10 @@ h1 {
    background-color: white;
    font-weight: bolder;
    font-size: 1.5em;
+   cursor: pointer;
 }
 
-.attempt__display-btn:hover {
+.attempt__display-btn:hover,
+.attempt__display-btn:focus {
     opacity: 0.8;
 }
