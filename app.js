@@ -2,15 +2,26 @@
 
 const wordList = ["cat","cop","top","doe","pot","pote","pen","toe", "tow", "town", "dune", "pew"];
 
-// select letter buttons
+let guess = [];
 
-document.querySelectorAll(".letter").forEach(item => {
-    item.addEventListener("click", event => {
-        console.log("You clicked me!");
+const display = document.getElementById("display");
+
+
+// loop through buttons and add a click event listener
+
+document.querySelectorAll(".letter").forEach(tile => {
+    tile.addEventListener("click", event => {
+        tile.classList.toggle("clicked");
+        guess.push(tile);
+        console.log(guess);
     })
+// add active tiles to the display
 })
 
 
 
-// loop through buttons and add a click event listener
+
+
+
+
 
