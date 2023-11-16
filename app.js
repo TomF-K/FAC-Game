@@ -1,13 +1,16 @@
-// target letters 
+// declare wordlist
 
-let letter = document.getElementsByClassName('letter');
+const wordList = ["cat","cop","top","doe","pot","pote","pen","toe", "tow", "town", "dune", "pew"];
 
-console.log(letter);
+// select letter buttons
 
-// add/remove new class of clicked to toggle appearance
+document.querySelectorAll(".letter").forEach(item => {
+    item.addEventListener("click", event => {
+        console.log("You clicked me!");
+    })
+})
 
 
-letter.addEventListener("click", function() {
-    letter.classList.add("clicked");
-  });
-  
+
+// loop through buttons and add a click event listener
+
