@@ -15,19 +15,30 @@ document.querySelectorAll(".letter").forEach(tile => {
 
 // push tile value into guess array
         guess.push(tile.textContent);
-        console.log(guess);
+        // console.log(guess);
 
-// display current active letters
+// convert active letters into single string
 
-        display.innerHTML = guess.join("");
+const flatGuess = guess.join("");    
 
+    display.textContent = flatGuess;
+        
     })
 
 })
 
+// Submit words 
 
+const submitBtn = document.getElementById("submit");
 
+console.log(submitBtn);
 
+let attempt = [];
+
+submitBtn.addEventListener("click", function() {
+    attempt.push(flatGuess);
+    console.log(attempt);
+});
 
 
 

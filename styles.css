@@ -100,10 +100,12 @@ h1 {
 .attempt__display {
     height: 80px;
     border: 2px solid white;
-    width: 60%;
+    width: 40%;
     text-align: center;
     margin: 0 auto;
+    padding: 0.25em;
     color: white;
+    font-family: var(--font-primary);
     font-size: 2em;
 }
 
