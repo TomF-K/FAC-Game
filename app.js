@@ -12,10 +12,17 @@ const display = document.getElementById("display");
 document.querySelectorAll(".letter").forEach(tile => {
     tile.addEventListener("click", event => {
         tile.classList.toggle("clicked");
-        guess.push(tile);
+
+// push tile value into guess array
+        guess.push(tile.textContent);
         console.log(guess);
+
+// display current active letters
+
+        display.innerHTML = guess.join("");
+
     })
-// add active tiles to the display
+
 })
 
 

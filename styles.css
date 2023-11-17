@@ -103,6 +103,8 @@ h1 {
     width: 60%;
     text-align: center;
     margin: 0 auto;
+    color: white;
+    font-size: 2em;
 }
 
 .attempt__display-btn {
