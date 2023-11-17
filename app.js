@@ -19,12 +19,8 @@ document.querySelectorAll(".letter").forEach(tile => {
 
 // convert active letters into single string
 
-const flatGuess = guess.join("");   
-
-// display string 
-
-    display.innerHTML = flatGuess;
-        
+    display.innerHTML = guess.join("");
+    
     })
 
 })
@@ -33,14 +29,20 @@ const flatGuess = guess.join("");
 
 const submitBtn = document.getElementById("submit");
 
-console.log(submitBtn);
-
 let attempt = [];
 
 submitBtn.addEventListener("click", function() {
     attempt.push(display.innerHTML);
     console.log(attempt);
+// reset tiles 
+// reset display
 });
+
+// check if word exists in wordList
+
+
+
+
 
 
 
