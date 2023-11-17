@@ -19,9 +19,11 @@ document.querySelectorAll(".letter").forEach(tile => {
 
 // convert active letters into single string
 
-const flatGuess = guess.join("");    
+const flatGuess = guess.join("");   
 
-    display.textContent = flatGuess;
+// display string 
+
+    display.innerHTML = flatGuess;
         
     })
 
@@ -36,7 +38,7 @@ console.log(submitBtn);
 let attempt = [];
 
 submitBtn.addEventListener("click", function() {
-    attempt.push(flatGuess);
+    attempt.push(display.innerHTML);
     console.log(attempt);
 });
 
