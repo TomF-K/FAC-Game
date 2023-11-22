@@ -16,7 +16,7 @@ const display = document.getElementById("display");
 
 // select score element
 
-const scoreDisplay = document.getElementsByClassName('score');
+const scoreDisplay = document.querySelector('.score');
 
 
 // loop through buttons and add a click event listener
@@ -52,6 +52,7 @@ function checkWord(wordList, attempt) {
             if (wordList[i] === attempt) {
                 success = true;
                 keepScore();
+                scoreDisplay.textContent = `Score: ${score}`;
             } 
     }
     console.log('success?', success, score);
@@ -61,19 +62,18 @@ function keepScore() {
     let wordLength = attempt.length;
     if(success = true && wordLength === 3) {
         score++;
-        console.log(wordLength);
     }
     if(success = true && wordLength === 4) {
         score += 2;
-        console.log(wordLength);
     }
     if(success = true && wordLength === 5 ) {
         score += 3;
-        console.log(wordLength);
     }
     if(success = true && wordLength === 6) {
         score += 4;
-        console.log(wordLength);
+    }
+    if(success = true && wordLength > 6) {
+        score += 5;
     }
 
 }
