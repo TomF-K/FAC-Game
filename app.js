@@ -4,7 +4,19 @@ const wordList = ["cat","cop","top","doe","pot","pote","pen","toe", "tow", "town
 
 let guess = [];
 
+let usedWords = [];
+
+let score = 0;
+
+
+// select display element
+
 const display = document.getElementById("display");
+
+
+// select score element
+
+const scoreDisplay = document.getElementsByClassName('score');
 
 
 // loop through buttons and add a click event listener
@@ -27,6 +39,7 @@ document.querySelectorAll(".letter").forEach(tile => {
 
 let attempt = guess.toString();
 
+
 // Submit words 
 
 const submitBtn = document.getElementById("submit");
@@ -38,18 +51,39 @@ function checkWord(wordList, attempt) {
         for (var i = 0; i < wordList.length; i++) {
             if (wordList[i] === attempt) {
                 success = true;
+                keepScore();
             } 
     }
-    console.log('success?', success);
+    console.log('success?', success, score);
+}
+
+function keepScore() {
+    let wordLength = attempt.length;
+    if(success = true && wordLength === 3) {
+        score++;
+        console.log(wordLength);
+    }
+    if(success = true && wordLength === 4) {
+        score += 2;
+        console.log(wordLength);
+    }
+    if(success = true && wordLength === 5 ) {
+        score += 3;
+        console.log(wordLength);
+    }
+    if(success = true && wordLength === 6) {
+        score += 4;
+        console.log(wordLength);
+    }
+
 }
     
 
 submitBtn.addEventListener("click", function() {
     attempt += display.innerHTML.toLowerCase();
     console.log(attempt);
-// check if word exists in wordList
 checkWord(wordList, attempt);
-// reset tiles 
+
         
 // reset display and tiles
     display.innerHTML = "";
@@ -58,7 +92,6 @@ checkWord(wordList, attempt);
     document.querySelectorAll(".letter").forEach(tile => {
         tile.classList.remove("clicked");
     });
-    console.log(attempt);
 }); 
 
 
