@@ -1,6 +1,6 @@
 // declare wordlist
 
-const wordList = ["ace","act","ate","cat","cop","dun","doe","dow","down","eat","fen","few","foe","for","fore","form","fort","mat","mate","mote","mow","mown","more","new","newt","oft","ore","pot","pote","pen","roe","rote","rot","row","tac","tea","toe","top","tow","two","toy","tor","tore","town","dune","pew","pewter","wend","woe","wore","worm","wormy","yore"];
+const wordList = ["ace","act","ate","cat","cop","cope","dun","doe","dow","down","eat","fen","few","foe","for","fore","form","fort","mat","mate","mote","mow","mown","more","new","newt","oft","ore","pot","pote","pen","roe","rote","rot","row","tac","tea","toe","top","tow","two","toy","tor","tore","town","dune","pew","pewter","wend","woe","wore","worm","wormy","yore"];
 
 let guess = [];
 
