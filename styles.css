@@ -64,6 +64,17 @@ h1 {
 
 }
 
+/* USED WORDS */
+
+.used__words-wrapper {
+    grid-column: 2/3;
+    font-family: var(--font-primary);
+    color: white;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+}
+
 /* LETTER STYLES */
 
 .letter {

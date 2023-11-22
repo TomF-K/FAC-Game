@@ -1,6 +1,6 @@
 // declare wordlist
 
-const wordList = ["ace","act","cat","cop","top","doe","dow","down","fen","few","foe","mat","mate","mow","mown","new","newt","pot","pote","pen","roe","rote","rot","row","tac","toe","tow","two","toy","tor","tore","town","dune","pew","pewter"];
+const wordList = ["ace","act","ate","cat","cop","dun","doe","dow","down","eat","fen","few","foe","for","fore","form","fort","mat","mate","mote","mow","mown","more","new","newt","oft","ore","pot","pote","pen","roe","rote","rot","row","tac","tea","toe","top","tow","two","toy","tor","tore","town","dune","pew","pewter","wend","woe","wore","worm","wormy","yore"];
 
 let guess = [];
 
@@ -17,6 +17,8 @@ const display = document.getElementById("display");
 // select score element
 
 const scoreDisplay = document.querySelector('.score');
+
+const foundWords = document.querySelector('.used__words-list');
 
 
 // loop through buttons and add a click event listener
@@ -53,6 +55,8 @@ function checkWord(wordList, attempt) {
                 success = true;
                 keepScore();
                 scoreDisplay.textContent = `Score: ${score}`;
+                usedWords.push(attempt);
+                foundWords.textContent = usedWords;
             } 
     }
     console.log('success?', success, score);
@@ -75,13 +79,12 @@ function keepScore() {
     if(success = true && wordLength > 6) {
         score += 5;
     }
-
 }
     
 
 submitBtn.addEventListener("click", function() {
     attempt += display.innerHTML.toLowerCase();
-    console.log(attempt);
+    //console.log(attempt);
 checkWord(wordList, attempt);
 
         
