@@ -18,7 +18,7 @@ const display = document.getElementById("display");
 
 const scoreDisplay = document.querySelector('.score');
 
-const foundWords = document.querySelector('.used__words-list');
+const foundWords = document.querySelector('.found__words-list');
 
 
 // loop through buttons and add a click event listener
