@@ -39,12 +39,7 @@ function updateCountdown() {
     gameTime--;
     if(gameTime < 0) {
         alert(`Time's Up! You scored ${score} points!`);
-    }
-}
-
-function stopGame() {
-    if(gameTime === 0) {
-        alert(`Time's Up! You scored ${score} points!`);
+        location.reload();
     }
 }
 
