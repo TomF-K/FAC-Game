@@ -68,11 +68,15 @@ h1 {
 
 .used__words-wrapper {
     grid-column: 2/3;
+    width: 100px;
     font-family: var(--font-primary);
     color: white;
     text-transform: uppercase;
     font-weight: lighter;
     letter-spacing: 0.1em;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
 
 /* LETTER STYLES */

@@ -1,6 +1,6 @@
 // declare wordlist
 
-const wordList = ["ace","act","ate","cat","cop","cope","dun","doe","dow","down","eat","fen","few","foe","for","fore","form","fort","mat","mate","mote","mow","mown","more","new","newt","oft","ore","pot","pote","pen","roe","rote","rot","row","tac","tea","toe","top","tow","two","toy","tor","tore","town","dune","pew","pewter","wend","woe","wore","worm","wormy","yore"];
+const wordList = ["ace","act","ate","cat","cop","cope","cot","dun","doe","dot", "dote","dow","down","eat","fen","few","foe","for","fore","form","fort","mat","mate","mote","mow","mown","more","new","newt","oft","ore","own","pot","pote","pen","roe","rote","rot","row","tac","tea","toe","top","tow","two","toy","tor","tore","town","dune","pew","pewter","wend","woe","wore","worm","wormy","yore"];
 
 let guess = [];
 
@@ -50,16 +50,17 @@ const submitBtn = document.getElementById("submit");
 
 function checkWord(wordList, attempt) {
     let success = false;
-        for (var i = 0; i < wordList.length; i++) {
+        for (let i = 0; i < wordList.length; i++) {
             if (wordList[i] === attempt) {
                 success = true;
                 keepScore();
                 scoreDisplay.textContent = `Score: ${score}`;
                 usedWords.push(attempt);
-                foundWords.textContent = usedWords;
+                
             } 
     }
     console.log('success?', success, score);
+    foundWords.textContent = usedWords.join(" ");
 }
 
 function keepScore() {
@@ -84,7 +85,6 @@ function keepScore() {
 
 submitBtn.addEventListener("click", function() {
     attempt += display.innerHTML.toLowerCase();
-    //console.log(attempt);
 checkWord(wordList, attempt);
 
         
