@@ -20,6 +20,38 @@ const scoreDisplay = document.querySelector('.score');
 
 const foundWords = document.querySelector('.found__words-list');
 
+// select timer and update game time 
+
+const timeLimit = document.getElementById('time-limit');
+
+const startingMinutes = 2;
+let gameTime = startingMinutes * 60;
+
+setInterval(updateCountdown, 1000);
+
+function updateCountdown() {
+    let minutes = Math.floor(gameTime / 60);
+    let seconds = gameTime % 60;
+
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+    
+    timeLimit.innerHTML = `Time Left: ${minutes}:${seconds}`;
+    gameTime--;
+    if(gameTime < 0) {
+        alert(`Time's Up! You scored ${score} points!`);
+    }
+}
+
+function stopGame() {
+    if(gameTime === 0) {
+        alert(`Time's Up! You scored ${score} points!`);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    updateCountdown();
+    stopGame();
+  });
 
 // loop through buttons and add a click event listener
 
@@ -89,8 +121,7 @@ function keepScore() {
 submitBtn.addEventListener("click", function() {
     attempt += display.innerHTML.toLowerCase();
 checkWord(wordList, attempt);
-
-        
+      
 // reset display and tiles
     display.innerHTML = "";
     attempt = '';
