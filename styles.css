@@ -64,7 +64,7 @@ h1 {
 
 }
 
-/* USED WORDS */
+/* FOUND WORDS */
 
 .found__words-wrapper {
     grid-column: 2/3;
@@ -77,6 +77,11 @@ h1 {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+}
+
+.found__words-list {
+    font-weight: lighter;
+    font-size: 2rem;
 }
 
 /* LETTER STYLES */

@@ -55,7 +55,10 @@ function checkWord(wordList, attempt) {
                 success = true;
                 keepScore();
                 scoreDisplay.textContent = `Score: ${score}`;
-                usedWords.push(attempt);
+                usedWords.unshift(attempt);
+                if(usedWords.length > 5) {
+                    usedWords.pop();
+                }
                 
             } 
     }
