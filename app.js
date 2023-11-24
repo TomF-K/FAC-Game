@@ -44,8 +44,8 @@ function updateCountdown() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    alert("Welcome to BrowserBoggle. Click the letter tiles to make words then click the SUBMIT button to enter them. You have 2 minutes to find as many words as possible!");
     updateCountdown();
-    stopGame();
   });
 
 // loop through buttons and add a click event listener

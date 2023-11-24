@@ -56,7 +56,7 @@ h1 {
 
 .game__stats-wrapper {
     grid-column: 6/8;
-    /* border: 2px solid lightblue; */
+    border: 2px solid lightblue; 
     color: white;
     font-family: var(--font-primary);
     font-weight: lighter;
@@ -115,6 +115,7 @@ h1 {
 /* ATTEMPT DISPLAY STYLING */
 
 .attempt__display-wrapper {
+    grid-column: 2/7 ;
     text-align: center;
     margin-top: 3em;
 }
@@ -145,4 +146,22 @@ h1 {
 .attempt__display-btn:hover,
 .attempt__display-btn:focus {
     opacity: 0.7;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 50px;
+        -webkit-text-stroke-width: 2px;
+    }
+
+    .game__stats-wrapper {
+        grid-column: 3/6;
+    }
+    .found__words-wrapper {
+        grid-column: 3/6;
+        flex-flow: row wrap;
+        width: 100%;
+    }
 }
